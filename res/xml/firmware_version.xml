@@ -20,10 +20,10 @@
     xmlns:settings="http://schemas.android.com/apk/res-auto"
     android:title="@string/firmware_version"
     settings:keywords="@string/keywords_android_version">
-
-   <PreferenceScreen
-       android:layout="@layout/derp_logo_layout"
-       android:key="derp_logo" />
+        
+    <PreferenceScreen
+        android:layout="@layout/synth_logo_layout"
+        android:key="synth_logo" />
 
     <!-- Android version -->
     <Preference
@@ -49,13 +49,29 @@
         settings:enableCopying="true"
         settings:controller="com.android.settings.deviceinfo.firmwareversion.MainlineModuleVersionPreferenceController"/>
 
-    <!-- DerpFest Version -->
+    <!-- SynthOS Version -->
     <Preference
-        android:key="derp_version"
-        android:title="@string/derp_version"
+        android:key="synth_version"
+        android:title="@string/synth_version_build"
         android:summary="@string/summary_placeholder"
         settings:enableCopying="true"
-        settings:controller="com.android.settings.deviceinfo.firmwareversion.DerpFestVersionPreferenceController"/>
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SynthVersionPreferenceController"/>
+
+    <!-- SynthOS Version Product-->
+    <Preference
+        android:key="synth_version_product"
+        android:title="@string/synth_version_product"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SynthVersionProductPreferenceController"/>
+
+    <!-- SynthOS Version Model-->
+    <Preference
+        android:key="synth_version_model"
+        android:title="@string/synth_version_model"
+        android:summary="@string/summary_placeholder"
+        settings:enableCopying="true"
+        settings:controller="com.android.settings.deviceinfo.firmwareversion.SynthVersionModelPreferenceController"/>
 
     <!-- DerpFest maintainer -->
     <Preference
