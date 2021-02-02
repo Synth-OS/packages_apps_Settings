@@ -12,8 +12,10 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- DerpFest Version -->
-    <string name="derp_version">DerpFest Build</string>
+    <!-- SynthOS Version -->
+    <string name="synth_version_build">SynthOS Build</string>
+    <string name="synth_version_product">SynthOS Product</string>
+    <string name="synth_version_model">SynthOS Model</string>
 
     <!-- DerpFest maintainer -->
     <string name="maintainer">Maintainer</string>
